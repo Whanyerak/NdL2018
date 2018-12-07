@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Channel name:</strong>
+  <%= @channel.Channel_Name %>
+</p>
+
+<p>
+  <strong>Drive path:</strong>
+  <%= @channel.drive_path %>
+</p>
+
+<p>
+  <strong>Users role:</strong>
+  <%= @channel.Users_Role %>
+</p>
+
+<p>
+  <strong>Users:</strong>
+  <%= @channel.users %>
+</p>
+
+<%= link_to 'Edit', edit_channel_path(@channel) %> |
+<%= link_to 'Back', channels_path %>
