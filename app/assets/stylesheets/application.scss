@@ -5,12 +5,10 @@
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
     height: 60px;
     line-height: 60px;
-    // position: absolute;
     top: 0px;
     width: 100%;
 
     h1 {
-        /*  margin:0;*/
         font-size: 35px;
         padding-top: 7px;
         height: 60px;
@@ -63,4 +61,27 @@
         background-color: #26295E;
     }
 
+}
+
+
+.left_border {
+	position: absolute;
+	width: 15%;
+	height: calc(100vh - 60px);
+	background-color: #fafafa;
+}
+
+.channel_element {
+	height: 6vh;
+	line-height: 7vh;
+}
+
+
+.right_border {
+	position: absolute;
+	text-align: center;
+	right: 0px;
+	width: 9%;
+	height: calc(100vh - 60px);
+	background-color: #fafafa;
 }

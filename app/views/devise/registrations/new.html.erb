@@ -5,22 +5,27 @@
 
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "compte@mail.com" %>
   </div>
 
   <div class="field">
     <%= f.label :name %><br />
-    <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
+    <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "VALSE" %>
   </div>
 
   <div class="field">
     <%= f.label :first_name %><br />
-    <%= f.text_field :first_name, autofocus: true, autocomplete: "first_name" %>
+    <%= f.text_field :first_name, autofocus: true, autocomplete: "first_name", placeholder: "Manouel" %>
   </div>
 
   <div class="field">
     <%= f.label :right %><br />
-    <%= f.text_field :right, autofocus: true, autocomplete: "right" %>
+    <%= f.text_field :right, autofocus: true, autocomplete: "right", placeholder: "ADMIN" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :role %><br />
+    <%= f.text_field :role, autofocus: true, autocomplete: "role", placeholder: "President" %>
   </div>
 
   <div class="field">
