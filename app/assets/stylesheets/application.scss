@@ -1,30 +1,66 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
-
 @import "bootstrap";
 
-#logo{
-	font-size:20px;
-	font-family: &quot;Helvetica Neue&quot;Helvetica,Arial,sans-serif;
-	float:left;
-	padding:10px;
+.header {
+    background-color: #3c5998;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    height: 60px;
+    line-height: 60px;
+    // position: absolute;
+    top: 0px;
+    width: 100%;
+
+    h1 {
+        /*  margin:0;*/
+        font-size: 35px;
+        padding-top: 7px;
+        height: 60px;
+        text-align: left;
+        padding-left: 3%;
+        color: white;
+        font-family: "Lato";
+        text-decoration: none;
+        width: 50%;
+
+        a {
+            color: white;
+            &:hover{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+
+    .right_top_button {
+        right: 10px;
+    }
+
+    .right_top_button_2 {
+        right: 137px;
+    }
+
+    .right_top_button_3 {
+        right: 154px;
+    }
+
+    .right_top_button_4 {
+        right: 282px;
+    }
+
+    .right_top_button, .right_top_button_2, .right_top_button_3, .right_top_button_4 {
+        font-family: "Lato";
+        color: #FFFFFF;
+        height: 60px;
+        top: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.4s;
+        position: absolute;
+    }
+
+    .right_top_button:hover, .right_top_button_2:hover, .right_top_button_3:hover, .right_top_button_4:hover {
+        background-color: #26295E;
+    }
+
 }
-body { padding-top: 100px; }
-footer { margin-top: 100px; }
-table, td, th { vertical-align:middle !important; border: none !important; }
-th { border-bottom: 1px solid #DDD !important; }
-td.picure { width: 140px; }
-td.picture img { width: 140px; }
