@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181207010815) do
+ActiveRecord::Schema.define(version: 20181207010920) do
+
+  create_table "channels", force: :cascade do |t|
+    t.string "Channel_Name"
+    t.string "drive_path"
+    t.string "Users_Role"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_channels_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
