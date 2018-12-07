@@ -1,10 +1,11 @@
 class CreateChannels < ActiveRecord::Migration[5.1]
   def change
-    create_table :channels, force: true do |t|
-      t.string :Channel_Name
+  	drop_table :channels
+
+    create_table :channels do |t|
+      t.string :name
       t.string :drive_path
-      t.string :Users_Role
-      t.references :user
+      t.string :user_access
 
       t.timestamps
     end

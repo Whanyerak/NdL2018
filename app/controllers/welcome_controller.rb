@@ -1,7 +1,7 @@
 class WelcomeController < ApplicationController
   
   def index
-  	@channels = User.all
+  	@channels = Channel.all
   end
 
 end

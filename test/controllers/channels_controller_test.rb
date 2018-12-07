@@ -17,7 +17,7 @@ class ChannelsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create channel" do
     assert_difference('Channel.count') do
-      post channels_url, params: { channel: { Channel_Name: @channel.Channel_Name, Users_Role: @channel.Users_Role, drive_path: @channel.drive_path, users: @channel.users } }
+      post channels_url, params: { channel: { drive_path: @channel.drive_path, name: @channel.name, user_access: @channel.user_access } }
     end
 
     assert_redirected_to channel_url(Channel.last)
@@ -34,7 +34,7 @@ class ChannelsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update channel" do
-    patch channel_url(@channel), params: { channel: { Channel_Name: @channel.Channel_Name, Users_Role: @channel.Users_Role, drive_path: @channel.drive_path, users: @channel.users } }
+    patch channel_url(@channel), params: { channel: { drive_path: @channel.drive_path, name: @channel.name, user_access: @channel.user_access } }
     assert_redirected_to channel_url(@channel)
   end
 

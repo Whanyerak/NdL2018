@@ -5,10 +5,9 @@
 <table>
   <thead>
     <tr>
-      <th>Channel name</th>
+      <th>Name</th>
       <th>Drive path</th>
-      <th>Users role</th>
-      <th>Users</th>
+      <th>User access</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,10 +15,9 @@
   <tbody>
     <% @channels.each do |channel| %>
       <tr>
-        <td><%= channel.Channel_Name %></td>
+        <td><%= channel.name %></td>
         <td><%= channel.drive_path %></td>
-        <td><%= channel.Users_Role %></td>
-        <td><%= channel.users %></td>
+        <td><%= channel.user_access %></td>
         <td><%= link_to 'Show', channel %></td>
         <td><%= link_to 'Edit', edit_channel_path(channel) %></td>
         <td><%= link_to 'Destroy', channel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
