@@ -1,24 +1,7 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Université Polytechnique des Hauts de France / UPHF
+## M2 TNSI
+### Nuit de l'informatique 2018
+<br>
+Developement of a solution including chat, file storage, accounting... made for helping student association.<br>
+<br>
+Still in development, not working at the moment :(
